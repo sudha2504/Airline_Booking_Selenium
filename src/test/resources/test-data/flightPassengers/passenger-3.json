@@ -1,0 +1,11 @@
+{
+  "firstName" : "Paul",
+  "lastName": "Downson",
+  "email": "padw@test.com",
+  "password": "Pas923",
+  "street": "231 Fall Gate",
+  "city": "COm",
+  "zip":"0922",
+  "passengerCount": "Three",
+  "expectedFare": "$1753 USD"
+}

@@ -1,0 +1,11 @@
+{
+  "firstName" : "Nora",
+  "lastName": "Dain",
+  "email": "nds@test.com",
+  "password": "Pas123",
+  "street": "9 Gate road",
+  "city": "PUN",
+  "zip":"2212",
+  "passengerCount": "Two",
+  "expectedFare": "$1169 USD"
+}

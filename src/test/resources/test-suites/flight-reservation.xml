@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite" thread-count="4" parallel="tests">
+    <test verbose="2" preserve-order="true" name="passenger-count-1">
+        <parameter name="reservationDataPath" value="test-data/flightPassengers/passenger-1.json"/>
+        <classes>
+            <class name="com.docker.tests.flightreservation.FlightReservationTest">
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="passenger-count-2">
+        <parameter name="reservationDataPath" value="test-data/flightPassengers/passenger-2.json"/>
+        <classes>
+            <class name="com.docker.tests.flightreservation.FlightReservationTest">
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="passenger-count-3">
+        <parameter name="reservationDataPath" value="test-data/flightPassengers/passenger-3.json"/>
+        <classes>
+            <class name="com.docker.tests.flightreservation.FlightReservationTest">
+            </class>
+        </classes>
+    </test>
+<!--    <test verbose="2" preserve-order="true" name="passenger-count-4">-->
+<!--        <parameter name="noPassengers" value="Four"/>-->
+<!--        <parameter name="FarePrice" value="$2338 USD"/>-->
+<!--        <classes>-->
+<!--            <class name="com.docker.tests.flightreservation.FlightReservationTest">-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>

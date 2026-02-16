@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/sudha/IdeaProjects/Udemy_Docker/src/test/java/com/docker/tests/flightreservation/FlightReservationTest.java">
+        <classes>
+            <class name="com.docker.tests.flightreservation.FlightReservationTest">
+                <methods><include name="userRegistrationTest"/>
+                    <include name="registrationConfirmationPage"/>
+                    <include name="flightSearchTest"/>
+                    <include name="flightSelectionTest"/>
+                    <include name="FlightConfirmationTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

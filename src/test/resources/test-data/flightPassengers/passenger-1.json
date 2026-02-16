@@ -1,0 +1,11 @@
+{
+  "firstName" : "Tom",
+  "lastName": "John",
+  "email": "jts@test.com",
+  "password": "Password",
+  "street": "123 Main road",
+  "city": "BOM",
+  "zip":"2012",
+  "passengerCount": "One",
+  "expectedFare": "$584 USD"
+}
