@@ -11,8 +11,8 @@ pipeline {
         stage('Check Java Version') {
                 steps {
                     sh 'java -version'
-                    sh 'mvn clean compile'
                     sh 'mvn -version'
+                    sh 'mvn clean compile'
                 }
             }
 
