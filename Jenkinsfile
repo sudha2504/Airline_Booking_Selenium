@@ -1,20 +1,9 @@
 pipeline {
-
-    agent {
-        docker {
-            image 'maven:3.9.10-eclipse-temurin-21'
-        }
-    }
-
+    
+    agent any
+    
     stages{
-
-        stage('Check Java Version') {
-                steps {
-                    sh 'java -version'
-                    sh 'mvn -version'
-                }
-            }
-
+        
          stage('Create Jar file'){
            steps {
              sh  "mvn clean package -DskipTests"
@@ -26,13 +15,13 @@ pipeline {
              sh "docker build sudha0425/AirlineSelenium"
            }
          }
-
-         stage('Push Docker Image'){
+     
+         stage('Push Docker Image'){ 
            steps {
-             sh "docker push sudha0425/AirlineSelenium"
+             sh  "docker push sudha0425/AirlineSelenium"
            }
-         }
-
+         } 
+       
     }
-
+    
 }
