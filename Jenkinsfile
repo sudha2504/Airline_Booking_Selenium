@@ -12,7 +12,7 @@ pipeline {
 
          stage('Create Docker Image'){
           steps {
-             sh "docker build -t sudha0425/AirlineSelenium"
+             sh "docker build -t sudha0425/AirlineSelenium ."
            }
          }
      
