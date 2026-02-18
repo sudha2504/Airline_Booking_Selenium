@@ -1,9 +1,9 @@
 pipeline {
 
-    agent any
-
-    tools {
-        jdk 'JDK21'
+    agent {
+        docker {
+            image 'maven:3.9.10-eclipse-temurin-21'
+        }
     }
 
     stages{
