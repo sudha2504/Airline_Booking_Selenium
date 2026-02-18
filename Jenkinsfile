@@ -11,7 +11,7 @@ pipeline {
          }
 
          stage('Create Docker Image'){
- .       steps {
+          steps {
              sh "docker build sudha0425/AirlineSelenium"
            }
          }
