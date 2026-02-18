@@ -4,6 +4,13 @@ pipeline {
 
     stages{
 
+        stage('Check Java Version') {
+                steps {
+                    sh 'java -version'
+                    sh 'mvn -version'
+                }
+            }
+
          stage('Create Jar file'){
            steps {
              sh  "mvn clean package -DskipTests"
