@@ -17,11 +17,21 @@ pipeline {
          }
      
          stage('Push Docker Image'){ 
+           environment{
+               DOCKER_HUB = credentials('dockerHub_creds')
+           }
            steps {
+             sh 'echo ${DOCKER_HUB_PSW} | docker login -u ${DOCKER_HUB_USR} --password-stdin'
              sh  "docker push sudha0425/airlineselenium"
            }
          } 
        
+    }
+
+    post{
+        always{
+            sh "docker logout"
+        }
     }
     
 }
